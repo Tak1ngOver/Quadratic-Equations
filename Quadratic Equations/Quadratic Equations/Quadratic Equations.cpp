@@ -15,6 +15,7 @@ void kaz_1();
 void kaz_2();
 int main()
 {
+    setlocale(LC_ALL, "KK");
     cout << "Choose your language:\n1 - English\n2 - Russian\n3 - Kazakh\nMore languages are coming soon!\n";
     cin >> lang;
     if (lang == 1) {
@@ -53,7 +54,7 @@ int main()
     }
 
     else {
-        cout << "Введено некорректно значение. Пожалуйста, перезапустите программу.\n";
+        cout << "Введено некорректное значение. Пожалуйста, перезапустите программу.\n";
     }
 
 
